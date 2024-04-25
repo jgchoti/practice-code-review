@@ -16,7 +16,7 @@
  *
  * intersection([2, 1, 2], [2, 3]); // -> [2]
  */
-export const intersection = (array = [], values = []) => {
+export const filterIntersection = (array = [], values = []) => {
   let result = array.filter(x => values.includes(x));
   let noDuplicateResult = new Set(result);
   return [...noDuplicateResult]
